@@ -3,4 +3,7 @@ collections:
   - name: ansible.controller
   - name: community.general
   - name: os_mgmt.linux_config
+  - name: ansible.utils
+  - name: ansible.posix
+  - name: redhat_cop.controller_configuration
 ...
