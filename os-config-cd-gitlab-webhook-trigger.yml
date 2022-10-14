@@ -3,6 +3,10 @@
   hosts: all
   gather_facts: false
   tasks:
-    - import_playbook: os_mgmt.linux_config.os-config-cd-gitlab-webhook-trigger.yml
+    - ansible.builtin.debug:
+        msg: play1
+
+- name: Include a playbook from a collection
+  ansible.builtin.import_playbook: os_mgmt.linux_config.os_config_cd_gitlab_webhook_trigger.yml
 ...
 

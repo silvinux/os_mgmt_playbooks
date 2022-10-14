@@ -3,6 +3,11 @@
   hosts: all
   gather_facts: false
   tasks:
-    - import_playbook: os_mgmt.linux_config.os-config-dispatch.yml
+    - ansible.builtin.debug:
+        msg: play1
+
+- name: Include a playbook from a collection
+  ansible.builtin.import_playbook: os_mgmt.linux_config.os_config_dispatch.yml
+
 ...
 
