@@ -7,7 +7,7 @@
         msg: play1
 
 - name: Include a playbook from a collection
-  ansible.builtin.import_playbook: os_mgmt.linux_config.os-config-update.yml
+  ansible.builtin.import_playbook: os_mgmt.linux_config.os_config_update.yml
 
 ...
 
