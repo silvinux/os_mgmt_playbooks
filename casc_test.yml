@@ -1,0 +1,16 @@
+---
+- name: Test Variables Inventories
+  hosts: all
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: Basic usage
+      ansible.builtin.debug:
+        msg:
+          - "vault_controller_username: {{ vault_controller_username }}"
+          - "vault_controller_password: {{ vault_controller_password }}"
+          - "vault_controller_hostname: {{ vault_controller_hostname }}"
+          - "automationhub_hostname: {{ automationhub_hostname }}"
+          - "automationhub_token: {{ automationhub_token }}"
+...
+

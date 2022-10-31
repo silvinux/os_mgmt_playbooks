@@ -1,0 +1,8 @@
+---
+vault_controller_username: 'same-user'
+vault_controller_password: 'same-password'
+vault_controller_hostname: "{{ groups['ctr-demo-dev-site1'][0] }}"
+vault_controller_validate_certs: false
+automationhub_hostname: "{{ groups['hub-demo-dev-site1'][0] }}"
+automationhub_token: "token-start-{{ groups['hub-demo-dev-site1'][0] }}-token-end"
+...
