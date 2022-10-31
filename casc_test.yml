@@ -1,6 +1,6 @@
 ---
 - name: Test Variables Inventories
-  hosts: all
+  hosts: '{{ env | default("all") }}'
   connection: local
   gather_facts: false
   tasks:
