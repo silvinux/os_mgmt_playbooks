@@ -1,6 +1,6 @@
 ---
 - name: Test Variables Inventories
-  hosts: '{{ env }}-{{ site }}'
+  hosts: 'ctr-{{ env }}-{{ site }}'
   connection: local
   gather_facts: false
   tasks:
